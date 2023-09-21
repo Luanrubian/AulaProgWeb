@@ -1,15 +1,27 @@
 {
-  "name": "repoprogweb",
+  "name": "progweb",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon --exec ts-node-dev src/server.ts"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "keywords": [],
-  "description": "",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "tsc": "^2.0.4",
+    "typeorm": "^0.3.17"
+  },
   "devDependencies": {
-    "@types/prompt-sync": "^4.2.0"
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.8",
+    "nodemon": "^3.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
   }
 }
